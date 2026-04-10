@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-fraunces: 'Fraunces', serif;
+  --font-nunito: 'Nunito', sans-serif;
+  --font-space-mono: 'Space Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* offset for fixed navbar (~72px) */
+  scroll-padding-top: 72px;
+}
+
+body {
+  font-family: var(--font-inter);
+  color: #0A0A0A;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Ensure images in circles don't overflow */
+.circle-img {
+  border-radius: 50%;
+  overflow: hidden;
+}
